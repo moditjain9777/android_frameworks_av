@@ -22,7 +22,7 @@ cc_library_shared {
           "camera_needs_client_info",
           "no_cameraserver_defaults",
           "qti_camera_device_defaults"
-
+    ],
     // Camera service source
     srcs: [
         "CameraService.cpp",

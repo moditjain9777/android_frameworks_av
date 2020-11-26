@@ -2979,7 +2979,7 @@ status_t CameraService::BasicClient::startCameraOps() {
     sCameraService->updateOpenCloseStatus(mCameraIdStr, true/*open*/, mClientPackageName);
 
 #ifdef TARGET_NEEDS_CLIENT_INFO
-    std::ofstream cpf("/data/misc/camera/client_package_name");
+    std::ofstream cpf("/data/misc/kangos/client_package_name");
     std::string cpn = String8(mClientPackageName).string();
     if (cpn.compare("com.oneplus.camera") == 0) {
         cpf << "com.oneplus.camera";
